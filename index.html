@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="#" />
+    <script
+      src="https://kit.fontawesome.com/cdd55ae2b7.js"
+      crossorigin="anonymous"></script>
+    <title>To Do List</title>
+  </head>
+  <body>
+    <div class="to-do-app">
+      <h2><i class="fa-solid fa-list-check"></i> To-Do List</h2>
+      <div class="row">
+        <input
+          type="text"
+          id="taskInput"
+          placeholder="Write your task here..." />
+        <!-- Un nou mod de a ataşa o funcţie la buton analog cu ceea ce facem în script prin addEventListener -->
+        <button onclick="addTask()">Add</button>
+      </div>
+      <!-- Elementul care va conţine fiecare task nou (<li>-urile create în script) -->
+      <ul id="taskList"></ul>
+      <button class="filter" id="showAll">All</button>
+      <button class="filter" id="showCompleted">Finished</button>
+      <button class="filter" id="showUncompleted">Unfinished</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
